@@ -677,6 +677,17 @@ h2 {
     padding-bottom: 100px;
 }
 
+.image-404 {
+    width: 100%;
+    margin: 4rem 0 6rem 0 ;
+}
+
+.image-404 img {
+    display: block;
+    margin: auto;
+}
+
+
 /** Side by side **/
 .line {
     width: 140px;
@@ -866,6 +877,24 @@ h6 {
 .navigation li {
     padding-bottom: 2rem;
 }
+
+
+.row-img {
+    display: flex;
+    padding: 0 4px;
+    max-width: 55rem;
+    margin: 4.5rem auto 6rem auto;
+  }
+  
+.column-img {
+    padding: 0 5px;
+  }
+  
+.column-img img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
 
 
 
