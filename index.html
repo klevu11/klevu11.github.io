@@ -4,16 +4,14 @@
  <html lang="en">
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
- <script type="text/javascript" src="myScript.js"></script>
  <link rel="stylesheet" href="mystyle.css"/> 
- <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700&amp;subset=vietnamese" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">  
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,400i,500,600,700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
         <header class="navbar">
           <div class="navbar__wrapper">
-            <a class="logo tech" href="index.html"><span class="gray border_logo">K</span><span class="border_logo">L</span></a>
+            <a class="logo" href="index.html"><img src="media/logoKL.png" alt="logo"/></a>
 
             <nav class="mobile_menu">
               <div class="menu" onclick="myFunction(this)">
@@ -29,55 +27,40 @@
             </nav>
 
             <ul class="nav__bar tech">
-              <li><a class="tablink hv_design" href="#design">Design Content</a></li>
-              <li><a class="tablink hv_art" href="#art">Art Content</a></li>
-              <li><a class="tablink hv_cv" href="#about">My CV & Contact</a></li>
+              <li><a class="tabLink _home active" href="">Home</a></li>
+              <li><a class="tabLink _intro" href="#intro">Intro</a></li>
+              <li><a class="tabLink _design" href="#design">Design</a></li>
+              <li><a class="tabLink _art" href="#art">Art</a></li>
+              <li><a class="tabLink _about" href="#about">My CV & Contact</a></li>
             </ul>
           </div>  
         </header>
 
         <main class="main_home">
-          <div class="bg_left"></div>
-          <div class="bg_right"></div>
-          <img class="portrait" alt="Self portrait illustrated" src="media/illus_linh.png"/>
-          <div class="name_wrapper"><img class="name" alt="Hello, my name is Linh" src="media/namelinh.png"/></div>
-          <div class="intro_wrapper">
-             <div class="intro_design">
-              <p>I am a visual designer with <br/> UI/UX knowlegde.</p>
-              <a href="#design" class="anchor design">View design projects</a>
-             </div>
-             <div class="intro_art">
-             <p>I am also a multidisciplinary artist , 
-               experimenting with photography and concept art.</p>
-             <a href="#art" class="anchor art">View art projects</a>
-             </div>
-        </div>
+          <section id="home">
+            <div class="text-wrapper">
+                <div class="bigtext">_out<br/>of<br/>the<br/>blue</div>
+                <div class="subtext">a portfolio by K. Linh Le Vu</div>
+            </div>
+          </section>
 
-        <svg class="visibility" width="99" height="99" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0)">
-          <path d="M81.3228 34.6058C80.4704 34.0379 79.3196 34.2689 78.7514 35.1209C78.1837 35.9733 78.4143 37.1244 79.2666 37.6923C80.1043 38.2505 80.4537 39.3025 80.1166 40.251C77.6455 47.2001 73.4536 53.1976 68.0163 57.788C70.1396 53.1645 70.5856 47.7624 68.8606 42.5698C67.1423 37.3976 63.5749 33.3476 59.1377 30.912C63.2448 31.1652 67.3159 32.0359 71.1956 33.523C71.677 33.7074 72.1611 33.9037 72.6353 34.1064C73.5771 34.5089 74.6666 34.0718 75.0692 33.1302C75.4718 32.1885 75.0346 31.0987 74.093 30.6963C73.576 30.475 73.0477 30.2611 72.5228 30.0601C62.952 26.3917 52.3143 26.1544 42.5698 29.3917C29.4555 33.7484 19.2758 43.7232 14.6408 56.7585C13.7329 59.3116 14.6739 62.144 16.929 63.6464C28.4428 71.3169 42.5677 73.2174 55.6819 68.8607C68.7959 64.5041 78.9757 54.5293 83.6111 41.4938C84.5188 38.9403 83.5779 36.1081 81.3228 34.6058ZM18.9851 60.5596C18.1474 60.0014 17.798 58.9494 18.1351 58.0009C20.6056 51.0532 24.7965 45.0567 30.2325 40.4663C28.112 45.0869 27.6652 50.4872 29.3909 55.6821C31.1161 60.875 34.7061 64.9363 39.17 67.3697C32.0679 66.9446 25.1218 64.648 18.9851 60.5596ZM54.5339 65.3334C54.5269 65.3358 54.5199 65.3383 54.5127 65.3407C54.5055 65.3431 54.4985 65.3452 54.4913 65.3476C45.5557 68.3033 35.8786 63.4472 32.9105 54.5128C29.9424 45.5785 34.7898 35.8971 43.7179 32.9183C43.7249 32.9159 43.7319 32.9135 43.7391 32.9111C43.7446 32.9092 43.7501 32.9076 43.7556 32.9058C52.6925 29.9466 62.3724 34.8029 65.3411 43.739C68.3092 52.6733 63.4619 62.3547 54.5339 65.3334Z" fill="#505050"/>
-          <path d="M46.6455 41.6585C42.5277 43.0265 40.291 47.4887 41.6589 51.6065C43.0269 55.7243 47.4891 57.961 51.6069 56.5931C55.7247 55.2251 57.9615 50.7629 56.5935 46.6451C55.2255 42.5273 50.7633 40.2905 46.6455 41.6585ZM50.4377 53.0735C48.2615 53.7964 45.9015 52.6135 45.1785 50.4373C44.4556 48.261 45.6385 45.9011 47.8147 45.1781C49.991 44.4551 52.3509 45.6381 53.0739 47.8143C53.7969 49.9905 52.6139 52.3505 50.4377 53.0735Z" fill="#505050"/>
-          <path d="M36.8755 12.2505C35.9035 12.5734 35.3774 13.6229 35.7003 14.5949L37.8927 21.194C38.2156 22.166 39.2651 22.6921 40.2371 22.3692C41.2091 22.0462 41.7351 20.9968 41.4122 20.0247L39.2199 13.4256C38.897 12.4536 37.8474 11.9276 36.8755 12.2505Z" fill="#505050"/>
-          <path d="M58.0149 75.8826C57.0429 76.2055 56.5168 77.255 56.8398 78.227L59.0321 84.8261C59.355 85.7981 60.4045 86.3242 61.3765 86.0012C62.3485 85.6783 62.8745 84.6288 62.5516 83.6568L60.3593 77.0577C60.0364 76.0857 58.9866 75.5597 58.0149 75.8826Z" fill="#505050"/>
-          <path d="M66.5387 14.3885C65.6232 13.9297 64.5091 14.2998 64.0497 15.2153L61.857 19.5896C61.3981 20.5052 61.7682 21.6194 62.6839 22.0786C63.1417 22.308 63.6489 22.3303 64.0995 22.1806C64.5498 22.031 64.943 21.7096 65.1727 21.2518L67.3657 16.8774C67.8244 15.9619 67.4543 14.8477 66.5387 14.3885Z" fill="#505050"/>
-          <path d="M35.5682 76.1731C34.6529 75.7144 33.5386 76.0844 33.0795 76.9999L30.8866 81.3743C30.4276 82.2898 30.7978 83.404 31.7134 83.8632C32.1712 84.0926 32.6788 84.1148 33.129 83.9652C33.5793 83.8156 33.9725 83.4942 34.2022 83.0364L36.3952 78.662C36.8539 77.7464 36.4838 76.6323 35.5682 76.1731Z" fill="#505050"/>
-          <path d="M21.252 33.0792L16.8774 30.8865C15.9619 30.4277 14.8477 30.7979 14.3887 31.7133C13.9299 32.6291 14.3001 33.7431 15.2156 34.2022L19.5902 36.3948C20.0479 36.6242 20.5555 36.6464 21.0058 36.4968C21.4561 36.3472 21.8496 36.0257 22.079 35.568C22.5377 34.6522 22.1674 33.5382 21.252 33.0792Z" fill="#505050"/>
-          <path d="M83.0362 64.0495L78.6619 61.8568C77.7461 61.3981 76.6322 61.7682 76.173 62.6837C75.7141 63.5995 76.0842 64.7135 76.9998 65.1726L81.3744 67.3652C81.8322 67.5945 82.3397 67.6167 82.79 67.4672C83.2403 67.3176 83.6335 66.9961 83.8632 66.5384C84.322 65.6225 83.9519 64.5083 83.0362 64.0495Z" fill="#505050"/>
-          </g>
-          <defs>
-          <clipPath id="clip0">
-          <rect width="77.714" height="77.714" fill="white" transform="translate(0 24.501) rotate(-18.3771)"/>
-          </clipPath>
-          </defs>
-          </svg>
+          <section id="intro">
+              <div class="hello">Hello, my name is Linh. </div>
+              <div class="who-i-am">I am a visual designer with UI/UX knowlegde. 
+                Also, I am a multidisciplinary artist , experimenting 
+                with photography and concept art.</div>
+          </section>
+          
+
+
+    
 
     <section id="design">
-          <div class="divider">
+        <div class="divider">
             <h2 class="design">Design</h2>
-            <div class="barra design"></div>
-          </div>
- 
-          <div class="intro">   
+        </div>
+
+        <div class="intro">   
              <div class="claim">
                     As a designer, I aim to deliver the closest <span class="highlight blue"> visual representation</span>
                     of the client’s <span class="highlight red">values</span> and <span class="highlight red">personality</span>.
@@ -129,7 +112,6 @@
     <section id="art">
       <div class="divider">
         <h2 class="art">Art</h2>
-        <div class="barra art"></div>
       </div>
 
          <div class="statement">
@@ -174,17 +156,16 @@
     <section id="about">
       <div class="divider">
         <h2 class="about">My CV & Contact</h2>
-        <div class="barra"></div>
       </div>
 
       <div class="about_wrapper">
         <div class="row">
 
            <div class="contact">
-             <p class="my_name tech"><strong>Le Vu Khanh Linh</strong><br/></p>
+             <p class="my_name"><strong>Le Vu Khanh Linh</strong><br/></p>
              <span>Currently based in Barcelona.</span>
              <div class="space"></div>
-             <p>You can email me at <strong><a href="mailto:levuklinh@gmail.com" target="_top">levuklinh@gmail.com</a></strong></p>
+             <p>You can email me at <strong><a class="art" href="mailto:levuklinh@gmail.com" target="_top">levuklinh@gmail.com</a></strong></p>
              <p>Or if you prefer something casual</p>
              <div class="social_media">
              <a href="https://www.instagram.com/lvklinh" target="_blank"><img class="insta" src="media/instagram(1).svg" alt="instagram logo"/></a>
@@ -192,7 +173,7 @@
              </div>
              <div class="space"></div>
              <p>You can write me in 
-              English, Spanish or Vietnamese. :D</p>
+              English, Spanish or Vietnamese.</p>
            </div>
 
            <div class="edu">
@@ -301,6 +282,7 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="app.js"></script>
 
 </body>
