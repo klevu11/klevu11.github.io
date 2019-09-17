@@ -24,12 +24,26 @@ $(window).on('scroll', function () {
     }
   });
 });
-         
-    
 });
+ 
 
 
 function myFunction(x) {
     x.classList.toggle("change");
   }
 
+window.onscroll = function() {stickyFunction()};
+
+  var navbar = document.getElementById("myHeader");
+  var main = document.getElementById("intro");
+  var sticky = navbar.offsetTop;
+  
+  function stickyFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+      main.classList.add("trans")
+    } else {
+      navbar.classList.remove("sticky");
+      main.classList.remove("trans");
+    }
+  }  

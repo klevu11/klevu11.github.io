@@ -5,61 +5,66 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
  <link rel="stylesheet" href="mystyle.css"/> 
- <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700&amp;subset=vietnamese" rel="stylesheet"> 
- <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">  
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,400i,500,600,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="navbar">
-    <div class="navbar__wrapper">
-      <a class="logo" href="index.html"><img src="media/logoKL.png" alt="logo"/></a>
+  <div class="showcase">
+      <div class="mockup_wrapper">
+      <img class="htn_mockup" src="media/htn_mockup.png" alt="Namecar dmockup"/>
+      </div>
+      <div class="divider white"></div>
+  </div>
 
-      <nav class="mobile_menu">
-        <div class="menu" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <ul class="navigation">
-          <li><a href="about.html">About me & Contact</a></li>
-          <li class="art"><a href="art_content.html">Art Content</a></li>
-          <li class="design"><a href="design_content.html">Design Content</a></li>
-        </ul>
-      </nav>
+  <div class="navbar__wrapper" id="myHeader">
+    <a class="logo" href="index.html"><img src="media/logoKL.svg" alt="logo"/></a>
 
-      <ul class="nav__bar tech">
-        <li><a class="tabLink _home" href="">Home</a></li>
-        <li><a class="tabLink _intro" href="#intro">Intro</a></li>
-        <li><a class="tabLink _design active" href="#design">Design</a></li>
-        <li><a class="tabLink _art" href="#art">Art</a></li>
-        <li><a class="tabLink _about" href="#about">My CV & Contact</a></li>
+    <nav class="mobile_menu">
+      <div class="menu" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </div>
+      <ul class="navigation">
+        <li><a href="about.html">About me & Contact</a></li>
+        <li class="art"><a href="art_content.html">Art Content</a></li>
+        <li class="design"><a href="design_content.html">Design Content</a></li>
       </ul>
-    </div>  
-  </header>
+    </nav>
+
+    <ul class="nav__bar tech">
+        <li><a class="tabLink _intro" href="index.html#intro">Intro</a></li>
+        <li><a class="tabLink _design" href="index.html#design">Design</a></li>
+        <li><a class="tabLink _art" href="index.html#art">Art</a></li>
+        <li><a class="tabLink _about" href="index.html#about">My CV & Contact</a></li>
+    </ul>
+  </div>  
+</header>
         
-   <main class="main_sbs">
-       <div class="showcase">
-           <div class="back sbs"><a href="index.html#design-project" class="underline sub back_text"> &#60 Back to projects </a></div>
-          <img class="htn_mockup" src="media/htn_mockup.png" alt="Namecar dmockup"/>
-       </div>
+   <main class="main_sbs" id="intro">
        <div class="description">
            <p class="work_type design">Graphic design</p>
            <h1>Freelance cinematographer namecard</h1>
            <div class="detalle">
-               <div><h6>Product:</h6><h5>Business card</h5></div>
-               <div><h6>Client:</h6><h5>Hoang Trung Nam</h5></div>
-               <div><h6>Sector:</h6><h5>Cinematographer, Freelancer</h5></div>
+               <div><h6>Product:</h6><p>Business card</p></div>
+               <div><h6>Client:</h6><p>Hoang Trung Nam</p></div>
+               <div><h6>Sector:</h6><p>Cinematographer, Freelancer</p></div>
            </div>
+
            <div class="line design"></div>
+       </div>
+
+          <div class="project_detail">
            <div class="introduccion htn">
-             <h3>1. Client’s value</h3>
+             <h6>1. Client’s value</h6>
              <p>Dynamic, proactive, junior freelancer who is passionate with Black Magic Pocket Camera. 
                  He was about to team up a Studio Production called KBTG. (abbreviation for triangle kimbab 
                  in Vietnamese)</p> 
              </div>
           
                
-            <h3>2. Visual concept</h3>
+            <h6>2. Visual concept</h6>
             <div class="vconcept">
                 <div>
                     <img src="media/pallete.png" alt="Candy colors pallete"/>
@@ -74,7 +79,29 @@
                     <div>Black Magic Pocket Camera</div>
                 </div>
             </div>
+          </div>
 
+        <div class="divider"></div>
+
+        <div id="design-project" class="projects extra">
+            <h3 class="center">More designs</h3>
+            <div class="more_projects">
+                <a href="vnexpress.html"><div class="box"><div class="VN thumb gallery__work"></div>
+                    <div>
+                        <p class="medium design">Printed banner</p>
+                        <p class="title_design">Vietnam Express</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="side_by_side_hustle.html"><div class="box"><div class="SBS thumb gallery__work"></div>
+                    <div>
+                        <p class="medium design">Landing page</p>
+                        <p class="title_design">Side by Side Hustle</p>
+                    </div>
+                  </div>
+                </a>
+            </div>
+        </div>
     </main>
     <footer>
     </footer>

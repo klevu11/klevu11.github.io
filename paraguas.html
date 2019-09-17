@@ -4,17 +4,39 @@
  <html lang="en">
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
-
  <link rel="stylesheet" href="mystyle.css"/> 
- <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700&amp;subset=vietnamese" rel="stylesheet"> 
- <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">  
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,400i,500,600,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="navbar">
-    <div class="navbar__wrapper">
-      <a class="logo" href="index.html"><img src="media/logoKL.png" alt="logo"/></a>
+ 
+ <header class="navbar">
+    <div class="showcase">
+        <div class="mockup_wrapper">    
 
+          
+                <div class="ficha_tecnica">
+                <p class="work_type art">Photography</p>
+                <h1>Doce Paraguas</h1>
+                <p class="medium">2016 | Digital print, 49.5 x 49.5 cm</p>
+                <p class="sub">Acquisition:<br/>
+                    June 2018 by
+                    TEA Tenerife Espacio de Las Artes
+                    <br/>Tenerife
+                </p>
+                <div class="line art"></div>
+                <p>Tribute to the fragility of the existence. 
+                    <br/> La Laguna 2014 after a common storm in March. </p>
+                </div>
+        
+
+        </div>
+        <div class="divider white"></div>
+    </div>
+  
+    <div class="navbar__wrapper" id="myHeader">
+      <a class="logo" href="index.html"><img src="media/logoKL.svg" alt="logo"/></a>
+  
       <nav class="mobile_menu">
         <div class="menu" onclick="myFunction(this)">
             <div class="bar1"></div>
@@ -27,39 +49,19 @@
           <li class="design"><a href="design_content.html">Design Content</a></li>
         </ul>
       </nav>
-
+  
       <ul class="nav__bar tech">
-        <li><a class="tabLink _home" href="">Home</a></li>
-        <li><a class="tabLink _intro" href="#intro">Intro</a></li>
-        <li><a class="tabLink _design" href="#design">Design</a></li>
-        <li><a class="tabLink _art active" href="#art">Art</a></li>
-        <li><a class="tabLink _about" href="#about">My CV & Contact</a></li>
+          <li><a class="tabLink _intro" href="index.html#intro">Intro</a></li>
+          <li><a class="tabLink _design" href="index.html#design">Design</a></li>
+          <li><a class="tabLink _art" href="index.html#art">Art</a></li>
+          <li><a class="tabLink _about" href="index.html#about">My CV & Contact</a></li>
       </ul>
     </div>  
   </header>
 
-
-    <div class="text_wrapper">
-        <div>
-          <div class="back"><a href="index.html#art-project" class="underline sub back_text">&#60 Back to projects</a></div>
-            <div class="showcase_art">
-                <div class="ficha_tecnica">
-                <p class="work_type art">Photography</p>
-                <h1 class="h1-art">Doce Paraguas</h1>
-                <p class="medium">2016 | Digital print, 49.5 x 49.5 cm</p>
-                <p class="sub">Acquisition:<br/>
-                    June 2018 by
-                    TEA Tenerife Espacio de Las Artes
-                    <br/>Tenerife
-                </p>
-                <div class="line art"></div>
-                <div class="space"></div>
-                <p>Tribute to the fragility of the existence. 
-                    <br/> La Laguna 2014 after a common storm in March. </p>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
+          
+    <main id="intro">
             
     <div class="row-img">
             <div class="column-img">
@@ -83,6 +85,35 @@
               <img src="media/paraguas/012.png">
             </div>
           </div>
+
+
+          <div class="divider"></div>
+
+          <div id="design-project" class="projects extra gallery">
+            <h3 class="center">More works</h3>
+            <div>
+               <a class="card" href="404.html"><img class="gallery__work" src="media/concept.png"/>
+                <div class="gallery_title">
+                  <p class="medium art">Concept art</p>
+                  <p class="title">One and Three Staring</p>
+                </div>
+               </a> 
+               <a class="card" href="natura_morta.html"><img class="gallery__work" src="media/morandi.png"/>
+                <div class="gallery_title">
+                 <p class="medium art">Photography</p>
+                 <p class="title">Natura Morta</p>
+               </div>
+              </a>
+               <a class="card" href="surroundings.html"><img class="gallery__work" src="media/surroundings.png"/>         
+                 <div class="gallery_title">
+                  <p class="medium art">Video</p>
+                  <p class="title">Surroundings</p>
+                </div>
+               </a>
+            </div>
+           </div>
+          
+    </main>
     
     <footer>
     </footer>

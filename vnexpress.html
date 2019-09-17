@@ -5,15 +5,21 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
  <link rel="stylesheet" href="mystyle.css"/> 
- <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700&amp;subset=vietnamese" rel="stylesheet"> 
- <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">  
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,400i,500,600,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="navbar">
-    <div class="navbar__wrapper">
-      <a class="logo" href="index.html"><img src="media/logoKL.png" alt="logo"/></a>
-
+    <div class="showcase">
+        <div class="mockup_wrapper">
+         <img class="vn_mockup" src="media/vnexpress-mockup.png" alt="Banner dmockup"/>
+        </div>
+        <div class="divider white"></div>
+    </div>
+  
+    <div class="navbar__wrapper" id="myHeader">
+      <a class="logo" href="index.html"><img src="media/logoKL.svg" alt="logo"/></a>
+  
       <nav class="mobile_menu">
         <div class="menu" onclick="myFunction(this)">
             <div class="bar1"></div>
@@ -26,40 +32,35 @@
           <li class="design"><a href="design_content.html">Design Content</a></li>
         </ul>
       </nav>
-
+  
       <ul class="nav__bar tech">
-        <li><a class="tabLink _home" href="">Home</a></li>
-        <li><a class="tabLink _intro" href="#intro">Intro</a></li>
-        <li><a class="tabLink _design active" href="#design">Design</a></li>
-        <li><a class="tabLink _art" href="#art">Art</a></li>
-        <li><a class="tabLink _about" href="#about">My CV & Contact</a></li>
+          <li><a class="tabLink _intro" href="index.html#intro">Intro</a></li>
+          <li><a class="tabLink _design" href="index.html#design">Design</a></li>
+          <li><a class="tabLink _art" href="index.html#art">Art</a></li>
+          <li><a class="tabLink _about" href="index.html#about">My CV & Contact</a></li>
       </ul>
     </div>  
   </header>
         
-   <main class="main_sbs">
-       <div class="showcase">
-           <div class="back sbs"><a href="index.html#design-project" class="underline sub back_text"> &#60 Back to projects </a></div>
-          <img class="htn_mockup" src="media/vnexpress-mockup.png" alt="Namecar dmockup"/>
-       </div>
+   <main class="main_sbs" id="intro">
        <div class="description">
            <p class="work_type design">Graphic design</p>
            <h1>VietnamExpress Restaurant Banner</h1>
            <div class="detalle">
-               <div><h6>Product:</h6><h5>Printed banner<br/>(136x18cm) for a kiosk</h5></div>
-               <div><h6>Client:</h6><h5>VietnamExpress</h5></div>
-               <div><h6>Sector:</h6><h5>Theme restaurant</h5></div>
+               <div><h6>Product:</h6><p>Printed banner<br/>(136x18cm) for a kiosk</p></div>
+               <div><h6>Client:</h6><p>VietnamExpress</p></div>
+               <div><h6>Sector:</h6><p>Theme restaurant</p></div>
            </div>
            <div class="line design"></div>
            <div class="introduccion htn">
-             <h3>1. Client’s value</h3>
+             <h6>1. Client’s value</h6>
              <p>Located in Madrid center, VietnamExpress is a food stall runned by a young, 
                  enthusiastic team whose motivation is to promote Vietnamese Cultures and Cuisine, 
                  creating an authentic experience for explorers.</p> 
              </div>
           
                
-            <h3>2. Visual concept</h3>
+            <h6>2. Visual concept</h6>
             <div class="vconcept">
                 <div>
                     <img src="media/train.png" alt="train"/>
@@ -74,6 +75,29 @@
                 <div>
                     <img src="media/Rectangle.png" alt="Red rectangle"/>
                     <div>Brand color</div>
+                </div>
+            </div>
+       </div>
+
+            <div class="divider"></div>
+
+            <div id="design-project" class="projects extra">
+                <h3 class="center">More designs</h3>
+                <div class="more_projects">
+                  <a href="htn.html"><div class="box"><div class="HTN thumb gallery__work"></div>
+                    <div>
+                        <p class="medium design">Business card</p>
+                        <p class="title_design">Freelance Cinematographer</p>
+                    </div>
+                   </div>
+                    </a>
+                    <a href="side_by_side_hustle.html"><div class="box"><div class="SBS thumb gallery__work"></div>
+                        <div>
+                            <p class="medium design">Landing page</p>
+                            <p class="title_design">Side by Side Hustle</p>
+                        </div>
+                      </div>
+                    </a>
                 </div>
             </div>
 

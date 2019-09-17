@@ -3,6 +3,7 @@ html {
     color: #333333;
     font-weight: 300;
     margin: 0;
+    background: #F2F2F2;
 }
 
 a {
@@ -24,10 +25,15 @@ body {
     margin: 0;
 }
 
+.dashed {
+  border: 0;
+  border-top: 6px dotted #fff;
+  margin: 0;
+}
+
 .navbar {
-    position: fixed;
-    top: 0;
     z-index: 3;
+    background: #F2F2F2;
 }
 
 .navbar__wrapper {
@@ -35,73 +41,111 @@ body {
     justify-content: space-between;
     width: 100vw;
     z-index: 3;
+    padding-top: 10px;
 }
 
 .visibility {
     margin-left: 50px;
 }
 
-.logo {
-    padding: 15px;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-#home, #intro {
+.trans {
+    padding-top: 100px;
+}
+
+.logo {
+    padding: 0 15px;
+    width: 8rem;
+}
+
+#intro {
     height: 100vh;
-    background: #f2f2f2;
+    margin-bottom: 5rem;
+}
+
+.banner {
+    height: 80vh;
+    width: 100vw;
+    background: url(media/banner.svg);
+    background-size: cover;
+    background-position: bottom; 
+}
+
+.intro_wrapper {
+    max-width: 45rem;
+    margin: 0 auto;
 }
 
 .hello {
-    font-size: 30px;
-    margin-left: 14rem;
+    font-size: 48px;   
     padding-top: 3rem;
 }
 
 .who-i-am {
-    font-size: 48px;
-    margin-left: 14rem;
+    font-size: 48px;  
     padding-top: 3rem;
-    max-width: 45rem;
 }
 
 #design, #art, #about {
-    padding-bottom: 7%;
+    padding-bottom: 9%;
+}
+
+#design, #art {
+    background: #fff;
+}
+
+#art {
+    padding-top: 6rem;
 }
 
 .gray {
     color: #B6b6b6
 }
 
+.bold {
+    font-weight: 800;
+}
+
 .nav__bar {
-    display: flex;
     color: #505050;
-    padding-top: 15px;
     text-transform: uppercase;
     font-size: 16px;
+    text-align: right;
 }
 
 .text-wrapper {
-    width: 18rem;
+    width: max-content;
+    position: absolute;
+    top: 25vh;
     margin: 0 auto;
-    padding-top: 9rem;
+    left: 0;
+    right: 0;
 }
 
 .bigtext {
     font-size: 60px;
     font-weight: 800;
-    color: #3828F3;
-    padding-bottom: 1rem;
+    color: #FFF;
+    padding-bottom: 0.5rem;
 }
 
 .subtext {
-    font-size: 22px;
+    font-size: 18px;
+    color: #F2f2f2;
+    text-align: center;
 }
 
 .art {
-    color: #3828F3;
+    color: #2419B2;
 }
 
 .design {
-    color: #3828F3;
+    color: #FFA300;
 }
 
 
@@ -113,13 +157,13 @@ body {
 }
 
 .tabLink.active {
-    color: #3828F3;
+    color: #2419B2;
     text-decoration: underline;
     font-weight: 600;
 }
 
 
-.statement {
+.art_intro {
     line-height: 1.35;
     width: 53%;
     margin: 3rem auto 2rem auto;
@@ -166,12 +210,12 @@ body {
 .gallery {
     margin: 0 auto;
     width: 78vw;
-    padding-top: 80px;
+    padding-top: 4rem;
 }
 
 
 .gallery > div {
-    padding-top: 50px;
+    padding-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -253,22 +297,26 @@ body {
 
 /**  Design Content  **/
 
-.intro {
+.design_intro {
     display: flex;
-    width: 55rem;
+    max-width: 65%;
     margin: auto;
-    padding: 5% 0 4% 0;
+    padding: 10% 0 4% 0;
 }
 
 .claim {
     font-size: 1.875rem;
     line-height: 150%;
-    width: 50%;
+    width: 55%;
 }
 
 .explain {
     margin-left: 8rem;
     display: block;
+}
+
+.explain li {
+    margin-bottom: 7px;
 }
 
 .italic {
@@ -304,22 +352,22 @@ body {
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #505050;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #B6B6B6;
 }
 
 h4 {
     font-size: 1rem;
     font-weight: normal;
-    font-style: italic;
-    color: #505050;
+    color: #B6B6B6;
     margin-bottom: 4px;
+    margin-top: 1rem;
 }
 
 h5 {
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
     line-height: 132%;
 }
@@ -328,19 +376,38 @@ h5 {
 .projects {
     width: 75% ;
     margin: auto;
-    padding: 3rem 0; 
+    padding: 4rem 0; 
+}
+
+.projects.extra {
+    width: 100%;
+    background: white;
+}
+
+.projects.extra > div {
+    justify-content: center;
+    width: 90%;
+}
+
+.projects.extra > div > a {
+  padding: 0 1rem;
 }
 
 .projects > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 1rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+}
+
+.more_projects {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
 }
 
 .box {
@@ -355,28 +422,29 @@ h5 {
 
 
 .HTN {
-    background: linear-gradient(0deg, rgba(144, 225, 191, 0.3), rgba(144, 225, 191, 0.3)), url('media/HTN.png'), #F9F9F9;
-    background-blend-mode: multiply, normal, normal;
+    background: url('media/HTN.png'), #F9F9F9;
+    background-blend-mode: normal, normal;
     background-size: contain;
     background-position: center; 
     background-repeat: no-repeat;
 }
 
 .VN {
-    background: linear-gradient(0deg, rgba(255, 157, 175, 0.3), rgba(255, 157, 175, 0.3)), url('media/vn.png'), #FFFFFF;
-    background-blend-mode: multiply, normal, normal;
+    background: url('media/vn.png'), #F9F9F9;
+    background-blend-mode: multiply, normal;
     background-size: contain;
     background-position: center; 
     background-repeat: no-repeat;
 }
 
 .SBS {
-    background: linear-gradient(0deg, rgba(157, 161, 255, 0.3), rgba(157, 161, 255, 0.3)), url('media/sbs.png'), #FFFFFF;
-    background-blend-mode: multiply, normal, normal;
+    background: url('media/sbs.png'), #F9F9F9;
+    background-blend-mode: multiply, normal;
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
 }
+
 
 .thumb + div {
     background: white;
@@ -392,17 +460,23 @@ h5 {
 
 
 .contact {
-    border: 2px solid black;
-    width: 19.5rem;
-    padding: 20px;
-    background: white;
+    width: 100%;
     margin-bottom: 3rem;
 }
 
-.my_name {
-    margin-top:0;
-    margin-bottom: 2px;
+.contact p {
+    margin-bottom: 4px;
+}
+
+.mail {
     font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 5px;
+    padding-bottom: 2rem;
+}
+
+.social_media {
+    margin-top: 0.75rem;
 }
 
 .insta, .fb {
@@ -475,9 +549,10 @@ hr {
 }
 
 .ficha_tecnica {
-    width: 100%;
+    width: 65%;
+    height: 60vh;
     margin: 0 auto;
-    padding: 5rem;
+    padding: 3rem 0;
 }
 
 .back {
@@ -499,7 +574,7 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 3rem 0;
+    margin: 9rem 0;
 }
 
 .morandi_wrapper div {
@@ -528,7 +603,13 @@ h2 {
 .divider {
     padding-top: 5rem;
     width: 100%;
-    margin: 0 auto;
+    height: 5rem;
+    background: url('media/divider.svg');
+    background-size: cover;
+}
+
+.divider.white {
+    transform: rotate(180deg);
 }
 
 .text_wrapper {
@@ -546,10 +627,6 @@ h2 {
         flex-wrap: wrap;
 }
 
-.back_text {
-    margin: 0 auto;
-    font-size: 14px;
-}
 /** Surroundings **/
 
 .video {
@@ -569,8 +646,7 @@ h2 {
 .video_wrapper {
     max-width: 50rem;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding: 9rem 0;
 }
 
 .image-404 {
@@ -601,24 +677,32 @@ h2 {
 }
 
 .introduccion.htn {
-    width: 24rem;
     line-height: 125%;
+    width: 75%;
 }
 
 .showcase {
     max-width: 100vw;
-    max-height: 75vh;
-    padding: 3rem 0 1.5rem 0;
-    background-color: #f2f2f2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    height: 80vh;
+}
+
+.mockup_wrapper {
+    background-color: #fff;
+    padding: 2rem 0;
 }
 
 .introduccion {
     padding: 2.5rem 0;
+}
+
+.detalle p {
+    margin-top: 2px;
+}
+
+.project_detail {
+    width: 60%;
+    margin: 0 auto;
+    padding: 3rem 0;
 }
 
 .description {
@@ -651,22 +735,27 @@ h2 {
 }
 
 .side_mockup {
-    margin-top: 4%;
-    margin-bottom: 2rem;
-    display: inline-block;
-    max-width: 70%;
-    height: auto;
+    margin: auto;
+    display: block;
+    max-width: 74%;
 }
 
 .htn_mockup {
-    margin: 4rem 0;
-    display: inline-block;
-    max-width: 65%;
-    padding-left: 4rem;
+    margin: auto;
+    display: block;
+    max-width: 70%;
+    padding: 4rem;
+}
+
+.vn_mockup {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    padding: 4rem;
 }
 
 .proto_person {
-    background: #f2f2f2;
+    background: #fff;
     border-radius: 20px;
     margin: 2rem auto 6rem auto;
     width: 70%;
@@ -733,7 +822,7 @@ h6 {
     font-size: 16px;
     font-weight: 800;
     margin: 0 0 4px 0;
-    color: #C5C5C5;
+    color: #757575;
 }
 
 
@@ -777,9 +866,9 @@ h6 {
 
 .row-img {
     display: flex;
-    padding: 0 4px;
+    padding: 6rem 0;
     max-width: 55rem;
-    margin: 4.5rem auto 6rem auto;
+    margin: 4.5rem auto 10rem auto;
   }
   
 .column-img {

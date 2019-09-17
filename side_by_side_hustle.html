@@ -5,15 +5,21 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
  <link rel="stylesheet" href="mystyle.css"/> 
- <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,600,700&amp;subset=vietnamese" rel="stylesheet"> 
- <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">  
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,400i,500,600,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="navbar">
-    <div class="navbar__wrapper">
-      <a class="logo" href="index.html"><img src="media/logoKL.png" alt="logo"/></a>
-
+    <div class="showcase">
+        <div class="mockup_wrapper">
+          <img class="side_mockup" src="media/side_by_side_mockup.png" alt="Landing page mockup"/>
+        </div>
+        <div class="divider white"></div>
+    </div>
+  
+    <div class="navbar__wrapper" id="myHeader">
+      <a class="logo" href="index.html"><img src="media/logoKL.svg" alt="logo"/></a>
+  
       <nav class="mobile_menu">
         <div class="menu" onclick="myFunction(this)">
             <div class="bar1"></div>
@@ -26,29 +32,25 @@
           <li class="design"><a href="design_content.html">Design Content</a></li>
         </ul>
       </nav>
-
+  
       <ul class="nav__bar tech">
-        <li><a class="tabLink _home" href="">Home</a></li>
-        <li><a class="tabLink _intro" href="#intro">Intro</a></li>
-        <li><a class="tabLink _design active" href="#design">Design</a></li>
-        <li><a class="tabLink _art" href="#art">Art</a></li>
-        <li><a class="tabLink _about" href="#about">My CV & Contact</a></li>
+          <li><a class="tabLink _intro" href="index.html#intro">Intro</a></li>
+          <li><a class="tabLink _design" href="index.html#design">Design</a></li>
+          <li><a class="tabLink _art" href="index.html#art">Art</a></li>
+          <li><a class="tabLink _about" href="index.html#about">My CV & Contact</a></li>
       </ul>
     </div>  
   </header>
         
-   <main class="main_sbs">
-       <div class="showcase">
-           <div class="back sbs"><a href="index.html#design-project" class="underline sub back_text"> &#60 Back to projects </a></div>
-          <img class="side_mockup" src="media/side_by_side_mockup.png" alt="Landing page mockup"/>
-       </div>
+   <main class="main_sbs" id="intro">
+ 
        <div class="description">
            <p class="work_type design">UI/UX  |  proyecto personal</p>
            <h1>Side by side Hustle</h1>
-           <div class="detalle"><div><h6>Producto:</h6> <h5>Landing Page</h5></div></div>
+           <div class="detalle"><div><h6>Producto:</h6> <p>Landing Page</p></div></div>
            <div class="line design"></div>
            <div class="introduccion">
-             <h3>1. Introducción:</h3>
+             <h6>1. Introducción:</h6>
              <p><em>Side by Side Hustle</em>e es el resultado de una sesión de Design Thinking cuando estaba en el máster de Experiencias Digitales en BAU.</p>
              <p>Los cuatros grupos trabajaron con cuatros temas asignados (Amor a distancia, Milenios, Fake News y Redes Sociales). 
               De los cuáles trabajé primero con “amor a distancia” en empatizar y definir el problema, luego en la ideación y prototipo estuve 
@@ -56,15 +58,15 @@
              </div>
           
                
-            <h3>2. Desarrollo de conceptos:</h3>
+            <h6>2. Desarrollo de conceptos:</h6>
             <div class="conceptos"> 
               <div>
-                <h6>Elevator pitch:</h6>
+                <p>Elevator pitch:</p>
                 <p class="p">El objetivo de Side by Side Hustle es facilitar la búsqueda 
                 de personas con quienes colaborar en un proyecto.</p>
               </div>
               <div>
-                <h6>Usuario:</h6>
+                <p>Usuario:</p>
                 <p class="p">Milenials que tienen muchas ganas de hacer realidad un proyecto pero les falta un equipo.</p>
               </div>
             </div>
@@ -86,9 +88,32 @@
                     </ul>
                </div>
 
-             <h3>3. Diseño de Landing Page</h3>
+             <h6>3. Diseño de Landing Page</h6>
            <img src="media/designsbs.png" class="design_sbs" alt="Final result for desktop"/>
         </div>
+
+        <div class="divider"></div>
+
+        <div id="design-project" class="projects extra">
+            <h3 class="center">More designs</h3>
+            <div class="more_projects">
+              <a href="htn.html"><div class="box"><div class="HTN thumb gallery__work"></div>
+                <div>
+                    <p class="medium design">Business card</p>
+                    <p class="title_design">Freelance Cinematographer</p>
+                </div>
+               </div>
+                </a>
+                <a href="vnexpress.html"><div class="box"><div class="VN thumb gallery__work"></div>
+                  <div>
+                      <p class="medium design">Printed banner</p>
+                      <p class="title_design">Vietnam Express</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+
     </main>
     <footer>
     </footer>
